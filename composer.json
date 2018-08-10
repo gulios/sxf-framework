@@ -1,0 +1,46 @@
+{
+  "name": "gulios/sxf-framework",
+  "description": "Gulios - Simple XML Framework",
+  "minimum-stability": "stable",
+  "keywords": ["framework", "sxf", "xslt", "php"],
+  "license": "proprietary",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Artur Gulios Milkowski",
+      "email": "gulios@gulios.pl",
+      "homepage": "https://www.gulios.com",
+      "role": "Owner"
+    }
+  ],
+  "repositories": [
+
+  ],
+  "require": {
+    "php": ">=7.2"
+
+
+  },
+  "require-dev": {
+    "fzaninotto/faker": "1.7.*",
+    "phpunit/phpunit": "7.0.*",
+    "filp/whoops": "2.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "APP\\": "app/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+
+    ]
+  },
+  "extra": {
+    "scripts-dev": {
+      "post-install-cmd": [
+        "php -r \"copy('.env.devel', '.env');\""
+      ]
+    }
+  }
+}
